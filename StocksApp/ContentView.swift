@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var searchTerm: String = ""
+    
+    init() {
+        UINavigationBar.appearance().backgroundColor = .black
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UITableView.appearance().backgroundColor = .black
+        UITableViewCell.appearance().backgroundColor = .black
+    }
+    
     var body: some View {
         NavigationView {
             
@@ -19,9 +29,11 @@ struct ContentView: View {
                     .font(.custom("Arial", size: 32))
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
-                    .offset(y: -400)
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
+                    .offset(y: -320)
                 
+                SearchView(searchTerm: $searchTerm)
+                    .offset(y: -260)
             }
             
             .navigationTitle("Stocks")

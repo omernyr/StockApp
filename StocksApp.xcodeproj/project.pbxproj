@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B7814E2A47055B0096874D /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7814D2A47055B0096874D /* StockListView.swift */; };
 		52EB48392A45E46F00992FD0 /* StocksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB48382A45E46F00992FD0 /* StocksAppApp.swift */; };
 		52EB483B2A45E46F00992FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB483A2A45E46F00992FD0 /* ContentView.swift */; };
 		52EB483D2A45E47000992FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EB483C2A45E47000992FD0 /* Assets.xcassets */; };
@@ -15,9 +16,11 @@
 		52EB484B2A45E55A00992FD0 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB484A2A45E55A00992FD0 /* Stock.swift */; };
 		52EB484E2A45E78F00992FD0 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB484D2A45E78F00992FD0 /* StockViewModel.swift */; };
 		52EB48512A45E79C00992FD0 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB48502A45E79C00992FD0 /* StockListViewModel.swift */; };
+		52EB48542A45F09F00992FD0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB48532A45F09F00992FD0 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52B7814D2A47055B0096874D /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		52EB48352A45E46F00992FD0 /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EB48382A45E46F00992FD0 /* StocksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppApp.swift; sourceTree = "<group>"; };
 		52EB483A2A45E46F00992FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		52EB484A2A45E55A00992FD0 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		52EB484D2A45E78F00992FD0 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		52EB48502A45E79C00992FD0 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		52EB48532A45F09F00992FD0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				52EB48462A45E4EB00992FD0 /* Service */,
 				52EB48382A45E46F00992FD0 /* StocksAppApp.swift */,
 				52EB483A2A45E46F00992FD0 /* ContentView.swift */,
+				52EB48522A45F08D00992FD0 /* Views */,
 				52EB483C2A45E47000992FD0 /* Assets.xcassets */,
 				52EB483E2A45E47000992FD0 /* Preview Content */,
 			);
@@ -101,6 +106,15 @@
 				52EB48502A45E79C00992FD0 /* StockListViewModel.swift */,
 			);
 			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		52EB48522A45F08D00992FD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52EB48532A45F09F00992FD0 /* SearchView.swift */,
+				52B7814D2A47055B0096874D /* StockListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB483B2A45E46F00992FD0 /* ContentView.swift in Sources */,
+				52B7814E2A47055B0096874D /* StockListView.swift in Sources */,
 				52EB48512A45E79C00992FD0 /* StockListViewModel.swift in Sources */,
 				52EB484E2A45E78F00992FD0 /* StockViewModel.swift in Sources */,
+				52EB48542A45F09F00992FD0 /* SearchView.swift in Sources */,
 				52EB48392A45E46F00992FD0 /* StocksAppApp.swift in Sources */,
 				52EB484B2A45E55A00992FD0 /* Stock.swift in Sources */,
 				52EB48482A45E4F600992FD0 /* Webservice.swift in Sources */,
